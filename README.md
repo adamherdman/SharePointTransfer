@@ -118,45 +118,6 @@ Alternatively, you can create the file manually:
     *   Enter the passphrase for your SFTP private key (if it has one).
     *   The upload will begin, with progress shown in the UI.
 
-## Building an Executable
-
-You can bundle the entire application into a single `.exe` file for easy distribution using **PyInstaller**.
-
-1.  **Install PyInstaller:**
-    ```sh
-    pip install pyinstaller
-    ```
-
-2.  **Create a `.spec` file:**
-    It's best practice to use a `.spec` file for more control, especially when including data files like images. Run this command once to generate it:
-    ```sh
-    pyinstaller --name DataTransferHub --windowed --onefile main.py
-    ```
-
-3.  **Edit the `DataTransferHub.spec` file:**
-    You need to tell PyInstaller to include your `Images` directory. Find the `Analysis` section and add your assets to the `datas` list.
-    ```python
-    # DataTransferHub.spec
-
-    # ... (other settings) ...
-
-    a = Analysis(
-        ['main.py'],
-        pathex=[],
-        binaries=[],
-        datas=[('Images', 'Images')],  # <--- ADD THIS LINE
-        hiddenimports=[],
-        hookspath=[],
-        # ... (other settings) ...
-    )
-
-    # ... (rest of the file) ...
-    ```
-4.  **Build the executable using the spec file:**
-    ```sh
-    pyinstaller DataTransferHub.spec
-    ```
-    The final executable will be located in the `dist` folder.
 
 ## Dependencies
 
