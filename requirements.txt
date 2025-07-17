@@ -1,0 +1,5 @@
+Office365-REST-Python-Client
+pandas
+customtkinter
+Pillow
+paramiko

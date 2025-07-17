@@ -1,0 +1,9 @@
+{
+  "DATA_FOLDER_PATH": "",
+  "APP_USERNAME": "",
+  "APP_PASSWORD": "",
+  "SFTP_HOSTNAME": "",
+  "SFTP_PORT": "22",
+  "SFTP_USERNAME": "",
+  "SFTP_PRIVATE_KEY_PATH": ""
+}
