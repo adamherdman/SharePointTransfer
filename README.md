@@ -2,7 +2,7 @@
 
 ![Python Version](https://img.shields.io/badge/python-3.9+-blue.svg)
 
-A desktop application designed to streamline the transfer of large datasets from a SharePoint site to an SFTP server. The tool features a user-friendly graphical interface, manifest-driven downloads, and secure uploads, making complex data migration tasks simple and repeatable.
+A desktop application designed to streamline the transfer of large datasets from a SharePoint site to an SFTP server for the Lloyd George Data Project. The tool features a user-friendly graphical interface, manifest-driven downloads, and secure uploads, making complex data migration tasks simple and repeatable.
 
 Main reason for this project was due to the 20GB download limitation within sharepoint.
 
@@ -109,7 +109,7 @@ Alternatively, you can create the file manually:
     *   The app will connect to SharePoint and open a folder explorer.
     *   Navigate to and select the parent folder containing your data and manifest file.
     *   Enter the exact filename of your `.csv` manifest file when prompted.
-    *   If the SharePoint folder name doesn't contain a `Dxxxx` style ID, you will be asked to provide one. This ID is used to name the local data folder.
+    *   If the SharePoint folder name doesn't contain an `Dxxxx` ODS style ID, you will be asked to provide one. This ID is used to name the local data folder.
     *   The download will begin, with progress shown in the UI.
 4.  **Click "Start Upload"**:
     *   A dialog will show all locally downloaded data folders.
