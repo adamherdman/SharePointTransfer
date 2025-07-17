@@ -18,7 +18,6 @@ Main reason for this project was due to the 20GB download limitation within shar
 -   [Installation](#installation)
 -   [Configuration](#configuration)
 -   [How to Use](#how-to-use)
--   [Building an Executable](#building-an-executable)
 -   [Dependencies](#dependencies)
 -   [License](#license)
 -   [Contact](#contact)
